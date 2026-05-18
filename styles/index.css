@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;900&family=Space+Grotesk:wght@400;600&display=swap');
+
+:root {
+  --sfeir-bg: #F9F9F9;
+  --sfeir-dark: #1B1B1B;
+  --sfeir-accent: #845400;
+  --sfeir-gold: #E5A040;
+  --sfeir-black: #000000;
+  --sfeir-card: #F1F1F1;
+}
+
+/* ── Base ── */
+.slidev-layout {
+  font-family: 'Epilogue', system-ui, sans-serif;
+  background: var(--sfeir-bg);
+  color: var(--sfeir-dark);
+}
+
+/* ── SVG diagrams (full-width) ── */
+.slidev-layout svg.diagram {
+  display: block;
+  width: 880px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ── HTML flow boxes (used in two-cols cards) ── */
+.flow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.flow-box {
+  background: #E8E3DD;
+  padding: 0.4rem 0.8rem;
+  border-radius: 2px;
+  font-size: 0.82rem;
+  text-align: center;
+  width: 80%;
+  color: #1B1B1B;
+}
+
+.flow-box.agent {
+  background: #845400;
+  color: white;
+  font-weight: 700;
+}
+
+.flow-arrow {
+  color: #845400;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+/* ── Headings ── */
+.slidev-layout h1 {
+  font-family: 'Epilogue', system-ui, sans-serif;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 0.9;
+  color: var(--sfeir-dark);
+  margin-bottom: 1.5rem;
+}
+
+.slidev-layout h2 {
+  font-family: 'Epilogue', system-ui, sans-serif;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 0.95;
+  color: var(--sfeir-dark);
+  margin-bottom: 1rem;
+}
+
+.slidev-layout h3 {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: var(--sfeir-gold);
+  margin-bottom: 0.4rem;
+  margin-top: 1.25rem;
+}
+
+/* ── Cover layout ── */
+.slidev-layout.cover {
+  background: var(--sfeir-bg) !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem 4rem;
+}
+
+.slidev-layout.cover h1 {
+  font-size: 3.5rem;
+  text-align: left;
+  max-width: 80%;
+}
+
+.slidev-layout.cover p {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  color: #514535;
+}
+
+/* ── Dark slides ── */
+.dark-slide,
+.dark-slide.slidev-layout {
+  background: var(--sfeir-black) !important;
+  color: #ffffff !important;
+}
+
+.dark-slide h1,
+.dark-slide h2 {
+  color: #ffffff !important;
+}
+
+.dark-slide h3 {
+  color: var(--sfeir-gold) !important;
+}
+
+.dark-slide code {
+  background: #1a1a1a;
+  color: #e5e5e5;
+}
+
+/* ── Section divider (center layout + dark) ── */
+.slidev-layout.center.dark-slide h1 {
+  font-size: 3rem;
+  line-height: 0.92;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ── Gold label (SFEIR category style) ── */
+.sfeir-label {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--sfeir-gold);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.sfeir-label::before {
+  content: '';
+  width: 2rem;
+  height: 2px;
+  background: var(--sfeir-gold);
+  display: block;
+  flex-shrink: 0;
+}
+
+/* ── Accent text ── */
+.gold {
+  color: var(--sfeir-gold);
+}
+
+.dark-slide .gold {
+  color: var(--sfeir-gold);
+}
+
+/* ── Cards ── */
+.sfeir-card {
+  background: var(--sfeir-card);
+  padding: 1.5rem 2rem;
+  border: none;
+}
+
+.dark-slide .sfeir-card {
+  background: #111111;
+  color: #ffffff;
+}
+
+/* ── Stat number (big display) ── */
+.stat {
+  font-family: 'Epilogue', system-ui, sans-serif;
+  font-weight: 900;
+  font-size: 4rem;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  color: var(--sfeir-dark);
+}
+
+.dark-slide .stat {
+  color: #ffffff;
+}
+
+/* ── Vertical separator line ── */
+.sfeir-sep {
+  border: none;
+  border-left: 1px solid #d0c8be;
+  height: 100%;
+}
+
+/* ── Code blocks ── */
+.slidev-layout pre,
+.slidev-layout .shiki {
+  background: var(--sfeir-card) !important;
+  border: none !important;
+  border-radius: 0 !important;
+  font-size: 0.78rem !important;
+}
+
+.dark-slide pre,
+.dark-slide .shiki {
+  background: #111111 !important;
+}
+
+/* ── Tables ── */
+.slidev-layout table {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-size: 0.85rem;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.slidev-layout table th {
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  color: var(--sfeir-gold);
+  border-bottom: 1px solid #d0c8be;
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+
+.slidev-layout table td {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid #e8e3dd;
+  vertical-align: top;
+}
+
+/* ── Blockquote ── */
+.slidev-layout blockquote {
+  border-left: 3px solid var(--sfeir-gold);
+  padding-left: 1rem;
+  color: #514535;
+  font-style: normal;
+  margin: 1.5rem 0;
+}
+
+.dark-slide blockquote {
+  color: #c8b89a;
+  border-left-color: var(--sfeir-gold);
+}
+
+/* ── Lists ── */
+.slidev-layout li {
+  margin-bottom: 0.4rem;
+  line-height: 1.5;
+}
+
+/* ── Two-cols ── */
+.slidev-layout.two-cols-header .col-right,
+.slidev-layout.two-cols .col-right {
+  border-left: 1px solid #d0c8be;
+  padding-left: 2rem;
+}
+
+/* ── LLM reasoning tree (HTML) ── */
+.llm-flow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1rem;
+  margin-top: 1rem;
+}
+
+.llm-flow .flow-row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.llm-flow .center-box {
+  width: 260px;
+  text-align: center;
+}
+
+.llm-flow .flow-branches {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 0.25rem;
+}
+
+.llm-flow .flow-branch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1rem;
+}
+
+.llm-flow .flow-box {
+  text-align: center;
+  font-size: 0.78rem;
+  padding: 0.4rem 0.6rem;
+  width: 140px;
+}
+
+/* ── MCP tree (HTML) ── */
+.mcp-tree {
+  display: flex;
+  align-items: stretch;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.mcp-col-left {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.mcp-agent {
+  background: #845400;
+  color: white;
+  font-family: 'Epilogue', sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 0.5rem 1.25rem;
+  border-radius: 2px;
+  white-space: nowrap;
+}
+
+.mcp-col-right {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  flex: 1;
+}
+
+.mcp-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+}
+
+.mcp-arrow {
+  color: #845400;
+  font-size: 1rem;
+  font-weight: 700;
+  padding-top: 0.35rem;
+  flex-shrink: 0;
+}
+
+.mcp-box {
+  flex: 1;
+  text-align: left !important;
+  font-size: 0.82rem !important;
+  font-weight: 700;
+  padding: 0.4rem 0.8rem !important;
+  width: auto !important;
+}
+
+.mcp-sub {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.7rem;
+  color: #514535;
+  font-weight: 400;
+}
+
+.mcp-items {
+  margin-top: 0.35rem;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.7rem;
+  color: #514535;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+/* ── End slide ── */
+.slidev-layout.end {
+  background: var(--sfeir-black) !important;
+  color: #ffffff;
+}
+
+.slidev-layout.end h1 {
+  color: #ffffff;
+  font-size: 5rem;
+  letter-spacing: -0.05em;
+}

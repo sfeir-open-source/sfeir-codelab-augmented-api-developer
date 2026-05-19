@@ -36,6 +36,7 @@ Sélectionner **diatixis**
 
 # Skill de revue de code : analyse qualité multi-dimensionnelle
 npx skills add addyosmani/agent-skills
+Sélectionner **code-review-and-quality** et **security-and-hardening**
 ```
 
 > Ces commandes installent les skills dans ton projet. Ton agent les découvre automatiquement au démarrage.

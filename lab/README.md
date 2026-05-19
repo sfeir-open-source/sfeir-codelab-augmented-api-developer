@@ -34,7 +34,8 @@ Sélectionner un agent additionnel si celui qui vous utilisez n'est pas dans la 
 npx skills add rlespinasse/agent-skills
 Sélectionner **diatixis**
 
-# Skill de revue de code : analyse qualité multi-dimensionnelle
+# Skills de revue de code et de sécurité/hardening :
+# analyse qualité multi-dimensionnelle + security-and-hardening
 npx skills add addyosmani/agent-skills
 Sélectionner **code-review-and-quality** et **security-and-hardening**
 ```

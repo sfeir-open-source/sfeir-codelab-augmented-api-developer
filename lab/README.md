@@ -32,6 +32,7 @@ Sélectionner un agent additionnel si celui qui vous utilisez n'est pas dans la 
 
 # Skill de documentation : structure la doc selon Diataxis
 npx skills add rlespinasse/agent-skills
+Sélectionner **diatixis**
 
 # Skill de revue de code : analyse qualité multi-dimensionnelle
 npx skills add addyosmani/agent-skills

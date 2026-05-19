@@ -210,6 +210,13 @@
   border: none !important;
   border-radius: 0 !important;
   font-size: 0.78rem !important;
+  color: var(--sfeir-black) !important;
+}
+
+.slidev-layout pre code,
+.slidev-layout .shiki code,
+.slidev-layout .shiki span {
+  color: var(--sfeir-black) !important;
 }
 
 .dark-slide pre,
@@ -244,15 +251,20 @@
 
 /* ── Blockquote ── */
 .slidev-layout blockquote {
+  background: transparent !important;
   border-left: 3px solid var(--sfeir-gold);
   padding-left: 1rem;
-  color: #514535;
+  color: var(--sfeir-dark);
   font-style: normal;
   margin: 1.5rem 0;
 }
 
+.slidev-layout blockquote strong {
+  color: inherit;
+}
+
 .dark-slide blockquote {
-  color: #c8b89a;
+  color: #f5f5f5;
   border-left-color: var(--sfeir-gold);
 }
 

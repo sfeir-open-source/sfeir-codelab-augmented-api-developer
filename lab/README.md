@@ -27,6 +27,8 @@ Les skills sont des modules de connaissance que l'agent charge à la demande. In
 ```bash
 # Skill de design : aide à valider les décisions d'architecture
 npx skills add mattpocock/skills
+Sélectionner **grill-me** ou **grill-me-with-docs** skill
+Sélectionner un agent additionnel si celui qui vous utilisez n'est pas dans la liste des agents universels
 
 # Skill de documentation : structure la doc selon Diataxis
 npx skills add rlespinasse/agent-skills

@@ -85,7 +85,7 @@ Voici le contrat que ton agent doit implémenter. **Ne code rien manuellement** 
 
 ## Étape 1 — Design avec `grill-me`
 
-Avant de coder, utilise le skill **grill-me** pour valider tes choix de design avec l'agent.
+Avant de coder passe en mode **plan** avec ton agent si possible, utilise le skill **grill-me** pour valider tes choix de design avec l'agent.
 
 **Prompt de démarrage :**
 ```

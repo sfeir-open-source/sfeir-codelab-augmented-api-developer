@@ -100,7 +100,7 @@ L'agent va te poser des questions une par une sur : le stack, la structure du pr
 
 ## Étape 2 — Construction de l'API
 
-Une fois le design validé, donne le contrat à l'agent :
+Une fois le design validé, passe en mode **build** et donne le contrat à l'agent :
 
 **Prompt :**
 ```

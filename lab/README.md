@@ -120,7 +120,7 @@ Laisse-le faire — interviens seulement si tu veux orienter une décision.
 ## Étape 3 — Revue de code avec `code-review-and-quality`
 
 L'API est construite. Utilise le skill de revue pour analyser la qualité.
-
+Repasse en mode **plan** et utilise le prompt suivant : 
 **Prompt :**
 ```
 code-review-and-quality — fais une revue complète de mon API Movie Library.
